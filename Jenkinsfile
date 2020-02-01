@@ -6,4 +6,6 @@ pipeline {
             git 'https://github.com/charan0409/parking_backend.git'
 		}
 	}
+	}
+}
 	
