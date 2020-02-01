@@ -79,7 +79,7 @@
 	<distributionManagement>
 	  <snapshotRepository>
 	    <id>nexus</id>
-	    <url>http://23.96.82.52:8081/repository/parking_backend/</url>
+	    <url>http://23.96.82.52:8081/repository/parking_backend/repositories/snapshots</url>
 	  </snapshotRepository>
 	</distributionManagement>
 	
