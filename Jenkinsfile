@@ -8,8 +8,7 @@ pipeline {
 	}
 	  stage('Build') {
 		steps {
-			withSonarQubeEnv(credentialsId: 'sonarqube', installationName: 'My SonarQube Server') {
-			sh '/home/hackathon/softwares/apache-maven-3.6.3/bin/mvn clean verify sonar:sonar -Dmaven.test.skip=true'
+			sh '/home/hackathon/softwares/apache-maven-3.6.3/bin/mvn clean install'
 			}
 		}
 	}
