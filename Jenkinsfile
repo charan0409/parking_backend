@@ -11,6 +11,10 @@ pipeline {
 			sh '/opt/maven/apache-maven-3.6.3/bin/mvn clean verify sonar:sonar -Dmaven.test.skip=true install'
 			}
 		}
+	  stage ('Deploy') {
+		steps {
+			sh '/opt/maven/bin/mvn clean deploy -Dmaven.test.skip=true'
+		}
 	}
 	}
-	
+	}
